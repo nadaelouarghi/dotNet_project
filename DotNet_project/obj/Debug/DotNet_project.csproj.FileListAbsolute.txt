@@ -1,0 +1,12 @@
+C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.csprojAssemblyReference.cache
+C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\WindowsFormsApp.Form1.resources
+C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.Properties.Resources.resources
+C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.csproj.GenerateResource.cache
+C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.csproj.CoreCompileInputs.cache
+C:\Users\nada\source\repos\DotNet_project\DotNet_project\bin\Debug\DotNet_project.exe.config
+C:\Users\nada\source\repos\DotNet_project\DotNet_project\bin\Debug\DotNet_project.exe
+C:\Users\nada\source\repos\DotNet_project\DotNet_project\bin\Debug\DotNet_project.pdb
+C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.exe
+C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.pdb
+C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.signup.resources
+C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.login.resources
