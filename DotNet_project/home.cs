@@ -151,9 +151,40 @@ namespace WindowsFormsApp
             }
             else
             {
-                // Logic to add the product to the cart
+                AddProductToCart(productId);
             }
         }
+
+        // Method to add the product to the cart
+        private void AddProductToCart(int productId)
+        {
+            string query = "INSERT INTO Cart (UserID, ProductID, Quantity) VALUES (@UserID, @ProductID, @Quantity)";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                // Assuming you have a way to get the UserID from the session
+                command.Parameters.AddWithValue("@UserID", SessionManager.UserId);
+                command.Parameters.AddWithValue("@ProductID", productId);
+                command.Parameters.AddWithValue("@Quantity", 1); // Assuming you always add one quantity at a time
+                int rowsAffected = command.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Product added to cart successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Failed to add product to cart. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+      
+    
+
+
+
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -197,7 +228,17 @@ namespace WindowsFormsApp
                 this.Hide();
 
             }
+            else
+            {
+                // Create an instance of the cart form
+                panier cartForm = new panier();
+
+                cartForm.Show();
+                this.Hide();
+            }
         }
+
+        
     }
 
 }

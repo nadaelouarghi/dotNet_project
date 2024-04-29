@@ -10,3 +10,4 @@ C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_projec
 C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.pdb
 C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.signup.resources
 C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.login.resources
+C:\Users\nada\source\repos\dotNet_project\DotNet_project\obj\Debug\DotNet_project.CartItem.resources

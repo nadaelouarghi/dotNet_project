@@ -31,7 +31,7 @@ namespace DotNet_project
                 label5.Text = "Please fill in all fields.";
                 return;
             }
-           // Get username and password from text boxes
+            // Get username and password from text boxes
             string username = textBox1.Text;
             string password = textBox3.Text;
 
@@ -43,6 +43,7 @@ namespace DotNet_project
                 // If valid user, redirect to home or another form
                 // For example:
                 SessionManager.Username = username;
+                SessionManager.UserId = GetUserID(username);
                 Form1 homeForm = new Form1();
                 homeForm.Show();
                 this.Hide(); // Hide the login form
@@ -69,5 +70,28 @@ namespace DotNet_project
             }
         }
 
+
+
+        // Method to get the UserID from the database based on the username
+        private int GetUserID(string username)
+        {
+            string query = "SELECT UserID FROM [User] WHERE Username = @Username";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                command.Parameters.AddWithValue("@Username", username);
+                object result = command.ExecuteScalar();
+                if (result != null)
+                {
+                    return Convert.ToInt32(result);
+                }
+                else
+                {
+                    return -1; // Return -1 if user not found (handle this case appropriately)
+                }
+            }
+        }
     }
 }
