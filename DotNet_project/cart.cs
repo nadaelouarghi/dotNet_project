@@ -11,29 +11,19 @@ using System.Windows.Forms;
 
 namespace DotNet_project
 {
-
-    public class CartItem
-    {
-        public string ProductName { get; set; }
-        public string CategoryName { get; set; }
-        public decimal Price { get; set; }
-        public int Quantity { get; set; }
-        public decimal TotalPrice => Price * Quantity;
-        public string ImageURL { get; set; }
-    }
-
-    public partial class panier : Form
+    public partial class cart : Form
     {
         string connectionString = "data source=LAPTOP-ROHL39L4;initial catalog=projetDotnet;integrated security=true";
 
-        public panier()
+        public cart()
         {
             InitializeComponent();
         }
 
-        private void panier_Load(object sender, EventArgs e)
+        private void cart_Load(object sender, EventArgs e)
         {
             LoadCartItems();
+
         }
 
         private List<CartItem> GetCartItemsForUser(string username)
@@ -140,7 +130,6 @@ namespace DotNet_project
                 yPos += 150; // Adjust Y position for the next item
             }
         }
-
 
     }
 }
