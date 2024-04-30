@@ -231,7 +231,7 @@ namespace WindowsFormsApp
             else
             {
                 // Create an instance of the cart form
-                panier cartForm = new panier();
+                cart cartForm = new cart();
 
                 cartForm.Show();
                 this.Hide();

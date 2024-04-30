@@ -1,6 +1,6 @@
 ﻿namespace DotNet_project
 {
-    partial class panier
+    partial class cart
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // panier
+            // cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1078, 844);
-            this.Name = "panier";
-            this.Text = "panier";
-            this.Load += new System.EventHandler(this.panier_Load);
+            this.Name = "cart";
+            this.Text = "cart";
+            this.Load += new System.EventHandler(this.cart_Load);
             this.ResumeLayout(false);
 
         }
