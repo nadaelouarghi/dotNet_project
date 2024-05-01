@@ -73,6 +73,12 @@
       <DependentUpon>cart.cs</DependentUpon>
     </Compile>
     <Compile Include="CartItem.cs" />
+    <Compile Include="MenuUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuUserControl.Designer.cs">
+      <DependentUpon>MenuUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SessionManager.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -103,6 +109,9 @@
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuUserControl.resx">
+      <DependentUpon>MenuUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -111,6 +120,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="signup.resx">
       <DependentUpon>signup.cs</DependentUpon>
@@ -139,6 +149,13 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\images\cartIcon.png" />
+    <Content Include="Properties\images\file.png" />
+    <Content Include="Properties\images\orderIcon.png" />
+    <Content Include="Properties\images\social.png" />
+    <Content Include="Properties\images\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
