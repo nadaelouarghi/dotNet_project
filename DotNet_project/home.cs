@@ -9,7 +9,7 @@ namespace WindowsFormsApp
 {
     public partial class Form1 : Form
     {
-        string connectionString = "data source=LAPTOP-ROHL39L4;initial catalog=projetDotnet;integrated security=true";
+        string connectionString = "data source=DESKTOP-NAWAL;initial catalog=Dotnet;integrated security=true";
 
         // Define a class to represent a category
         public class Category
@@ -53,7 +53,7 @@ namespace WindowsFormsApp
         // Method to display images for each category
         private void DisplayImages()
         {
-            string connectionString = "data source=LAPTOP-ROHL39L4;initial catalog=projetDotnet;integrated security=true";
+            string connectionString = "Data Source=DESKTOP-NAWAL;Initial Catalog=DotNet;Integrated Security=True";
             string query = "SELECT TOP 4 ProductID, ProductName, Price, ImageURL FROM Product WHERE CategoryID = @CategoryID";
             SqlConnection connection = new SqlConnection(connectionString);
 

@@ -10,3 +10,15 @@ C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_projec
 C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.pdb
 C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.signup.resources
 C:\Users\nada\source\repos\DotNet_project\DotNet_project\obj\Debug\DotNet_project.login.resources
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\bin\Debug\DotNet_project.exe.config
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\bin\Debug\DotNet_project.exe
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\bin\Debug\DotNet_project.pdb
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.csprojAssemblyReference.cache
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\WindowsFormsApp.Form1.resources
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.login.resources
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.Properties.Resources.resources
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.signup.resources
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.csproj.GenerateResource.cache
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.csproj.CoreCompileInputs.cache
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.exe
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.pdb
