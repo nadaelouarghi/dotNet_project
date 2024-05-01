@@ -24,6 +24,8 @@ namespace WindowsFormsApp
         public Form1()
         {
             InitializeComponent();
+            logoIcon.Click -= logoIcon_Click;
+
             DisplayWelcomeMessage();
             LoadCategories();
             DisplayImages();
@@ -53,7 +55,6 @@ namespace WindowsFormsApp
         // Method to display images for each category
         private void DisplayImages()
         {
-            string connectionString = "data source=LAPTOP-ROHL39L4;initial catalog=projetDotnet;integrated security=true";
             string query = "SELECT TOP 4 ProductID, ProductName, Price, ImageURL FROM Product WHERE CategoryID = @CategoryID";
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -83,7 +84,7 @@ namespace WindowsFormsApp
                 // Set the position of the group box
                 groupBox.Location = new Point((this.ClientSize.Width - groupBox.Width) / 2, groupBoxY);
 
-                               // Calculate the horizontal position of the first panel to center the panels
+                // Calculate the horizontal position of the first panel to center the panels
                 int initialPanelX = (groupBox.Width - (4 * panelWidth + 3 * 10)) / 2; // Assuming 10 pixels spacing between panels
 
                 // Query the database to get the top 4 products for the current category
@@ -180,44 +181,26 @@ namespace WindowsFormsApp
             }
         }
 
-      
-    
 
-
-
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            // Create an instance of the sign-up form
-            signup signUpForm = new signup();
-
-            signUpForm.Show();
-            this.Hide();
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            // Create an instance of the sign-up form
-            login loginForm = new login();
-
-            loginForm.Show();
-            this.Hide();
-        }
 
         private void DisplayWelcomeMessage()
         {
             if (!string.IsNullOrEmpty(SessionManager.Username))
             {
-                label1.Text = "Welcome, " + SessionManager.Username + "!";
-                button1.Visible = false;
-                button2.Visible = false;
-
+                welcomemsglabel.Text = "Welcome, " + SessionManager.Username + "!";
+                sinscrirelinkLabel.Visible = false;
+                seconnecterlinkLabel.Visible = false;
+            }
+            else
+            {
+                accountlabel.Visible = false;
+                accountpictureBox.Visible = false;
+                orderlabel.Visible = false;
+                orderpictureBox.Visible = false;
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void logoIcon_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(SessionManager.Username))
             {
@@ -238,7 +221,71 @@ namespace WindowsFormsApp
             }
         }
 
-        
-    }
+        private void seconnecterlinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Create an instance of the sign-up form
+            login loginForm = new login();
 
+            loginForm.Show();
+            this.Hide();
+        }
+
+        private void sinscrirelinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Create an instance of the sign-up form
+            signup signUpForm = new signup();
+
+            signUpForm.Show();
+            this.Hide();
+        }
+
+      
+
+
+        /* Define a method to create PictureBoxes dynamically
+        private void CreateDynamicPictureBoxes()
+        {
+            // PictureBox 1
+            PictureBox pictureBox1 = new PictureBox();
+            pictureBox1.Image = DotNet_project.Properties.Resources.orderIcon; // Set image
+            pictureBox1.Location = new Point(725, 20); // Set location
+            pictureBox1.Size = new Size(43, 41); // Set size
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; // Set size mode
+            pictureBox1.Click += PictureBox_Click; // Attach click event handler
+            menupregroupBox.Controls.Add(pictureBox1); // Add to form's Controls collection
+
+            // Label 6
+            Label label6 = new Label();
+            label6.AutoSize = true;
+            label6.Size = new Size(148, 20);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(658, 64);
+            label6.Text = "mes commandes";
+            menupregroupBox.Controls.Add(label6);
+
+            // PictureBox 3
+            PictureBox pictureBox2 = new PictureBox();
+            pictureBox2.Image = DotNet_project.Properties.Resources.accountIcon; // Set image
+            pictureBox2.Location = new Point(846, 20); // Set location
+            pictureBox2.Size = new Size(43, 41); // Set size
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage; // Set size mode
+            pictureBox2.Click += PictureBox_Click; // Attach click event handler
+            menupregroupBox.Controls.Add(pictureBox2); // Add to form's Controls collection
+
+            // Label 5
+            Label label5 = new Label();
+            label5.AutoSize = true;
+            label5.ForeColor = Color.Black;
+            label5.Size = new Size(107, 20);
+            label5.Location = new Point(812, 64);
+            label5.Text = "mon compte";
+            menupregroupBox.Controls.Add(label5);
+        }
+
+        private void PictureBox_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+    */
+    }
 }

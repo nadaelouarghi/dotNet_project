@@ -28,20 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.cart_menuUserControl = new DotNet_project.MenuUserControl();
             this.SuspendLayout();
+            // 
+            // cart_menuUserControl
+            // 
+            this.cart_menuUserControl.Location = new System.Drawing.Point(-3, -4);
+            this.cart_menuUserControl.Name = "cart_menuUserControl";
+            this.cart_menuUserControl.Size = new System.Drawing.Size(1080, 88);
+            this.cart_menuUserControl.TabIndex = 0;
             // 
             // cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1078, 844);
+            this.Controls.Add(this.cart_menuUserControl);
             this.Name = "cart";
-            this.Text = "cart";
+            this.Text = "Mon panier";
             this.Load += new System.EventHandler(this.cart_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private MenuUserControl cart_menuUserControl;
     }
 }
