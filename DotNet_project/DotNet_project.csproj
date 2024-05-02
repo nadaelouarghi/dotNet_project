@@ -73,11 +73,18 @@
       <DependentUpon>cart.cs</DependentUpon>
     </Compile>
     <Compile Include="CartItem.cs" />
+    <Compile Include="Category.cs" />
     <Compile Include="MenuUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MenuUserControl.Designer.cs">
       <DependentUpon>MenuUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeAllByCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeAllByCategory.Designer.cs">
+      <DependentUpon>SeeAllByCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="SessionManager.cs" />
     <Compile Include="login.cs">
@@ -122,6 +129,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SeeAllByCategory.resx">
+      <DependentUpon>SeeAllByCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="signup.resx">
       <DependentUpon>signup.cs</DependentUpon>
     </EmbeddedResource>

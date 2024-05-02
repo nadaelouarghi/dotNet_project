@@ -20,6 +20,8 @@ namespace DotNet_project
         public login()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(100, 100);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -92,6 +94,15 @@ namespace DotNet_project
                     return -1; // Return -1 if user not found (handle this case appropriately)
                 }
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            signup signForm = new signup();
+
+                signForm.Show();
+                this.Hide();
+            
         }
     }
 }

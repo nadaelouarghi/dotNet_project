@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApp
+﻿namespace DotNet_project
 {
-    partial class Form1
+    partial class SeeAllByCategory
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.welcomemsglabel = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeeAllByCategory));
             this.menupregroupBox = new System.Windows.Forms.GroupBox();
             this.orderlabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@
             this.accountpictureBox = new System.Windows.Forms.PictureBox();
             this.seconnecterlinkLabel = new System.Windows.Forms.LinkLabel();
             this.monpanierlabel = new System.Windows.Forms.Label();
+            this.welcomemsglabel = new System.Windows.Forms.Label();
             this.cartIcon = new System.Windows.Forms.PictureBox();
             this.menupregroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderpictureBox)).BeginInit();
@@ -47,14 +47,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.accountpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cartIcon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // welcomemsglabel
-            // 
-            this.welcomemsglabel.AutoSize = true;
-            this.welcomemsglabel.Location = new System.Drawing.Point(264, 41);
-            this.welcomemsglabel.Name = "welcomemsglabel";
-            this.welcomemsglabel.Size = new System.Drawing.Size(0, 20);
-            this.welcomemsglabel.TabIndex = 12;
             // 
             // menupregroupBox
             // 
@@ -76,7 +68,7 @@
             this.menupregroupBox.Location = new System.Drawing.Point(0, 0);
             this.menupregroupBox.Name = "menupregroupBox";
             this.menupregroupBox.Size = new System.Drawing.Size(1078, 88);
-            this.menupregroupBox.TabIndex = 14;
+            this.menupregroupBox.TabIndex = 15;
             this.menupregroupBox.TabStop = false;
             // 
             // orderlabel
@@ -117,7 +109,7 @@
             this.logoIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoIcon.TabIndex = 17;
             this.logoIcon.TabStop = false;
-            this.logoIcon.Click += new System.EventHandler(this.logoIcon_Click);
+            this.logoIcon.Click += new System.EventHandler(this.logoIcon_Click_1);
             // 
             // accountlabel
             // 
@@ -139,7 +131,7 @@
             this.sinscrirelinkLabel.TabIndex = 16;
             this.sinscrirelinkLabel.TabStop = true;
             this.sinscrirelinkLabel.Text = "S\'inscrire";
-            this.sinscrirelinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.sinscrirelinkLabel_LinkClicked);
+            this.sinscrirelinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.sinscrirelinkLabel_LinkClicked_1);
             // 
             // accountpictureBox
             // 
@@ -161,7 +153,7 @@
             this.seconnecterlinkLabel.TabIndex = 15;
             this.seconnecterlinkLabel.TabStop = true;
             this.seconnecterlinkLabel.Text = "Se connecter";
-            this.seconnecterlinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.seconnecterlinkLabel_LinkClicked);
+            this.seconnecterlinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.seconnecterlinkLabel_LinkClicked_1);
             // 
             // monpanierlabel
             // 
@@ -172,6 +164,14 @@
             this.monpanierlabel.Size = new System.Drawing.Size(98, 20);
             this.monpanierlabel.TabIndex = 14;
             this.monpanierlabel.Text = "mon panier";
+            // 
+            // welcomemsglabel
+            // 
+            this.welcomemsglabel.AutoSize = true;
+            this.welcomemsglabel.Location = new System.Drawing.Point(264, 41);
+            this.welcomemsglabel.Name = "welcomemsglabel";
+            this.welcomemsglabel.Size = new System.Drawing.Size(0, 20);
+            this.welcomemsglabel.TabIndex = 12;
             // 
             // cartIcon
             // 
@@ -184,16 +184,16 @@
             this.cartIcon.TabStop = false;
             this.cartIcon.Click += new System.EventHandler(this.cartIcon_Click);
             // 
-            // Form1
+            // SeeAllByCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1078, 694);
+            this.ClientSize = new System.Drawing.Size(1078, 720);
             this.Controls.Add(this.menupregroupBox);
-            this.Name = "Form1";
-            this.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.Text = "E_shop";
+            this.Name = "SeeAllByCategory";
+            this.Text = "SeeAllByCategory";
+            this.Load += new System.EventHandler(this.SeeAllByCategory_Load);
             this.menupregroupBox.ResumeLayout(false);
             this.menupregroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderpictureBox)).EndInit();
@@ -205,18 +205,18 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.GroupBox menupregroupBox;
+        private System.Windows.Forms.Label orderlabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox orderpictureBox;
+        private System.Windows.Forms.PictureBox logoIcon;
+        private System.Windows.Forms.Label accountlabel;
+        private System.Windows.Forms.LinkLabel sinscrirelinkLabel;
+        private System.Windows.Forms.PictureBox accountpictureBox;
+        private System.Windows.Forms.LinkLabel seconnecterlinkLabel;
+        private System.Windows.Forms.Label monpanierlabel;
         private System.Windows.Forms.Label welcomemsglabel;
         private System.Windows.Forms.PictureBox cartIcon;
-        private System.Windows.Forms.GroupBox menupregroupBox;
-        private System.Windows.Forms.Label monpanierlabel;
-        private System.Windows.Forms.LinkLabel sinscrirelinkLabel;
-        private System.Windows.Forms.LinkLabel seconnecterlinkLabel;
-        private System.Windows.Forms.PictureBox logoIcon;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label orderlabel;
-        private System.Windows.Forms.PictureBox orderpictureBox;
-        private System.Windows.Forms.Label accountlabel;
-        private System.Windows.Forms.PictureBox accountpictureBox;
     }
 }
-
