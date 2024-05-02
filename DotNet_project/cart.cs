@@ -14,10 +14,12 @@ namespace DotNet_project
     public partial class cart : Form
     {
         string connectionString = "data source=LAPTOP-ROHL39L4;initial catalog=projetDotnet;integrated security=true";
-        
+
         public cart()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(100, 100);
             cart_menuUserControl.cartIcon.Click -= cart_menuUserControl.cartIcon_Click;
         }
 
@@ -132,6 +134,6 @@ namespace DotNet_project
             }
         }
 
-      
+
     }
 }
