@@ -22,3 +22,6 @@ C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet
 C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.csproj.CoreCompileInputs.cache
 C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.exe
 C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.pdb
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.adminHome.resources
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.gererProduit.resources
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.gererCategorie.resources
