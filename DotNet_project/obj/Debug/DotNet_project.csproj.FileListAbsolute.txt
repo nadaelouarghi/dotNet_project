@@ -25,3 +25,5 @@ C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet
 C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.adminHome.resources
 C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.gererProduit.resources
 C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.gererCategorie.resources
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.gererClients.resources
+C:\Users\Nawal_Am\Desktop\S4\.Net\dotNet_project\DotNet_project\obj\Debug\DotNet_project.gererCommande.resources

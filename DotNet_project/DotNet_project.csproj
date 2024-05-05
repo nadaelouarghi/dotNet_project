@@ -85,6 +85,18 @@
     <Compile Include="gererCategorie.Designer.cs">
       <DependentUpon>gererCategorie.cs</DependentUpon>
     </Compile>
+    <Compile Include="gererClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gererClients.Designer.cs">
+      <DependentUpon>gererClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gererCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gererCommande.Designer.cs">
+      <DependentUpon>gererCommande.cs</DependentUpon>
+    </Compile>
     <Compile Include="gererProduit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +129,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gererCategorie.resx">
       <DependentUpon>gererCategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gererClients.resx">
+      <DependentUpon>gererClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gererCommande.resx">
+      <DependentUpon>gererCommande.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gererProduit.resx">
       <DependentUpon>gererProduit.cs</DependentUpon>

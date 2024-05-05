@@ -97,7 +97,7 @@ namespace DotNet_project
                 // Mettre à jour l'interface utilisateur
                 ClearFields();
                 button1.Text = "Ajouter"; // Réinitialiser le libellé du bouton
-
+                button1.BackColor = Color.MediumSeaGreen;
                 MessageBox.Show("Le produit a été modifié avec succès.");
 
                 // Mettre à jour automatiquement la GridView après la modification du produit
@@ -323,5 +323,29 @@ namespace DotNet_project
             }
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+            (new gererProduit()).Show();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            (new gererCategorie()).Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            (new gererClients()).Show();
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+            (new gererCommande()).Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            //deconnexion
+        }
     }
 }

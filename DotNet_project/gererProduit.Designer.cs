@@ -63,8 +63,11 @@
             this.urlTextBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dotNetDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label15 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.dotNetDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -76,6 +79,8 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dotNetDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -209,6 +214,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Chocolate;
+            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
@@ -250,6 +257,7 @@
             this.label6.Size = new System.Drawing.Size(93, 29);
             this.label6.TabIndex = 0;
             this.label6.Text = "Clients";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel4
             // 
@@ -269,6 +277,7 @@
             this.label5.Size = new System.Drawing.Size(140, 29);
             this.label5.TabIndex = 0;
             this.label5.Text = "Categories";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox4
             // 
@@ -298,6 +307,7 @@
             this.label4.Size = new System.Drawing.Size(110, 29);
             this.label4.TabIndex = 0;
             this.label4.Text = "Produits";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox3
             // 
@@ -338,6 +348,7 @@
             this.label3.Size = new System.Drawing.Size(141, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Déconnexion";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // descriptionTextBox
             // 
@@ -409,6 +420,36 @@
             this.label15.TabIndex = 41;
             this.label15.Text = "Liste Des Produits";
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(0, 432);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(56, 47);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 13;
+            this.pictureBox6.TabStop = false;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label16);
+            this.panel6.Location = new System.Drawing.Point(62, 432);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(144, 47);
+            this.panel6.TabIndex = 12;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Chocolate;
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(4, 9);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(162, 29);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Commandes";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
             // gererProduit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
@@ -458,6 +499,9 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dotNetDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -501,5 +545,8 @@
         private System.Windows.Forms.BindingSource dotNetDataSetBindingSource;
        // private DotNetDataSet dotNetDataSet;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label16;
     }
 }
