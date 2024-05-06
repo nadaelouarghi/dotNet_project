@@ -65,7 +65,7 @@ namespace DotNet_project
             string url = urlTextBox.Text;
             string description = descriptionTextBox.Text;
             int quantite = int.Parse(quantiteTextBox.Text);
-            Category selectedCategory = (Category)categorieComboBox.SelectedItem;
+            Categorie selectedCategory = (Categorie)categorieComboBox.SelectedItem;
             int categorieID = selectedCategory.ID;
 
             if (button1.Text == "Ajouter") { AjouterProduit(nom, prix, url, description, quantite, categorieID); }
@@ -183,7 +183,7 @@ namespace DotNet_project
 
 
 
-        private List<Category> categories = new List<Category>();
+        private List<Categorie> categories = new List<Categorie>();
 
         private void ChargerCategories()
         {
@@ -201,7 +201,7 @@ namespace DotNet_project
                 {
                     int categoryId = (int)reader["CategoryID"];
                     string categoryName = (string)reader["CategoryName"];
-                    Category category = new Category(categoryId, categoryName);
+                    Categorie category = new Categorie(categoryId, categoryName);
                     categories.Add(category);
                 }
 

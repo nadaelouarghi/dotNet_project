@@ -54,7 +54,11 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+<<<<<<< HEAD
     <Reference Include="System.Windows.Forms.DataVisualization" />
+=======
+    <Reference Include="System.Messaging" />
+>>>>>>> d7842f7dbb6d940c3ae2def3a7948148db1a6cc4
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,6 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="adminHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +107,27 @@
     </Compile>
     <Compile Include="gererProduit.Designer.cs">
       <DependentUpon>gererProduit.cs</DependentUpon>
+=======
+    <Compile Include="cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cart.Designer.cs">
+      <DependentUpon>cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartItem.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="MenuUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuUserControl.Designer.cs">
+      <DependentUpon>MenuUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeAllByCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeAllByCategory.Designer.cs">
+      <DependentUpon>SeeAllByCategory.cs</DependentUpon>
+>>>>>>> d7842f7dbb6d940c3ae2def3a7948148db1a6cc4
     </Compile>
     <Compile Include="SessionManager.cs" />
     <Compile Include="login.cs">
@@ -124,6 +150,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="adminHome.resx">
       <DependentUpon>adminHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,12 +165,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gererProduit.resx">
       <DependentUpon>gererProduit.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="cart.resx">
+      <DependentUpon>cart.cs</DependentUpon>
+>>>>>>> d7842f7dbb6d940c3ae2def3a7948148db1a6cc4
     </EmbeddedResource>
     <EmbeddedResource Include="home.resx">
       <DependentUpon>home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuUserControl.resx">
+      <DependentUpon>MenuUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -153,7 +187,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SeeAllByCategory.resx">
+      <DependentUpon>SeeAllByCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="signup.resx">
       <DependentUpon>signup.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,7 +221,15 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Folder Include="images\" />
+=======
+    <Content Include="Properties\images\cartIcon.png" />
+    <Content Include="Properties\images\file.png" />
+    <Content Include="Properties\images\orderIcon.png" />
+    <Content Include="Properties\images\social.png" />
+    <Content Include="Properties\images\user.png" />
+>>>>>>> d7842f7dbb6d940c3ae2def3a7948148db1a6cc4
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

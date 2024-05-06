@@ -20,6 +20,8 @@ namespace DotNet_project
         public login()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(100, 100);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,7 +33,7 @@ namespace DotNet_project
                 label5.Text = "Please fill in all fields.";
                 return;
             }
-           // Get username and password from text boxes
+            // Get username and password from text boxes
             string username = textBox1.Text;
             string password = textBox3.Text;
 
@@ -43,7 +45,12 @@ namespace DotNet_project
                 // If valid user, redirect to home or another form
                 // For example:
                 SessionManager.Username = username;
+<<<<<<< HEAD
                 adminHome homeForm = new adminHome();
+=======
+                SessionManager.UserId = GetUserID(username);
+                Form1 homeForm = new Form1();
+>>>>>>> d7842f7dbb6d940c3ae2def3a7948148db1a6cc4
                 homeForm.Show();
                 this.Hide(); // Hide the login form
             }
@@ -69,5 +76,37 @@ namespace DotNet_project
             }
         }
 
+
+
+        // Method to get the UserID from the database based on the username
+        private int GetUserID(string username)
+        {
+            string query = "SELECT UserID FROM [User] WHERE Username = @Username";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                command.Parameters.AddWithValue("@Username", username);
+                object result = command.ExecuteScalar();
+                if (result != null)
+                {
+                    return Convert.ToInt32(result);
+                }
+                else
+                {
+                    return -1; // Return -1 if user not found (handle this case appropriately)
+                }
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            signup signForm = new signup();
+
+                signForm.Show();
+                this.Hide();
+            
+        }
     }
 }

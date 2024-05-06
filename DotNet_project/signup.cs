@@ -18,6 +18,8 @@ namespace DotNet_project
         public signup()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(100, 100);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -107,7 +109,8 @@ namespace DotNet_project
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+       
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             login loginForm = new login();
 

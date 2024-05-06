@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace DotNet_project
 {
-    public class Category
+    public class Categorie
     {
+
         public int ID { get; set; }
         public string Name { get; set; }
 
-        public Category(int id, string name)
+        public Categorie(int id, string name)
         {
             ID = id;
             Name = name;
@@ -20,6 +21,7 @@ namespace DotNet_project
         {
             return Name;
         }
+    
+       
     }
-
 }
