@@ -221,43 +221,35 @@ namespace DotNet_project
             }
         }
 
-
-
-
-
         private void ChargerDonneesProduits()
         {
             try
             {
                 connection.Open();
 
-                string query = "SELECT * FROM Product";
+                string query = "SELECT Product.ProductID, Product.ProductName, Product.Price, Product.ImageURL, Product.Description, Product.Quantity, Category.CategoryName " +
+                               "FROM Product " +
+                               "INNER JOIN Category ON Product.CategoryID = Category.CategoryID";
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
-                
 
                 // Liaison des données au DataGridView
-
                 dataGridView1.DataSource = dataTable;
 
+                // Masquer la colonne ProductID
                 dataGridView1.Columns["ProductID"].Visible = false;
-                
+
                 // Définir la propriété AutoSizeMode de chaque colonne sur Fill
                 foreach (DataGridViewColumn col in dataGridView1.Columns)
                 {
-                    if (col.Name != "ProductID") // Ne pas modifier la colonne ProductID
-                    {
-                        col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                    }
+                    col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                 }
-                //MessageBox.Show("Nombre de lignes récupérées : " + dataTable.Rows.Count);
-
             }
             catch (Exception ex)
             {
-                 MessageBox.Show("Erreur lors du chargement des données: " + ex.Message);
+                MessageBox.Show("Erreur lors du chargement des données: " + ex.Message);
             }
             finally
             {
@@ -266,7 +258,8 @@ namespace DotNet_project
             }
         }
 
-        
+
+
 
         private void label12_Click(object sender, EventArgs e)
         {

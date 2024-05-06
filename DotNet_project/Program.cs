@@ -17,7 +17,7 @@ namespace DotNet_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new gererClients());
+            Application.Run(new gererCommande());
         }
     }
 }

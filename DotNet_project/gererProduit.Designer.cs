@@ -45,6 +45,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -64,12 +67,11 @@
             this.label14 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
             this.dotNetDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -79,8 +81,6 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dotNetDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -229,6 +229,36 @@
             this.panel1.Size = new System.Drawing.Size(207, 589);
             this.panel1.TabIndex = 23;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(0, 432);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(56, 47);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 13;
+            this.pictureBox6.TabStop = false;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label16);
+            this.panel6.Location = new System.Drawing.Point(62, 432);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(144, 47);
+            this.panel6.TabIndex = 12;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Chocolate;
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(4, 9);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(162, 29);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Commandes";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
@@ -363,7 +393,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(1118, 9);
+            this.label12.Location = new System.Drawing.Point(1139, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(29, 29);
             this.label12.TabIndex = 26;
@@ -420,36 +450,6 @@
             this.label15.TabIndex = 41;
             this.label15.Text = "Liste Des Produits";
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(0, 432);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(56, 47);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 13;
-            this.pictureBox6.TabStop = false;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label16);
-            this.panel6.Location = new System.Drawing.Point(62, 432);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(144, 47);
-            this.panel6.TabIndex = 12;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Chocolate;
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(4, 9);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(162, 29);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Commandes";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
-            // 
             // gererProduit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
@@ -486,6 +486,9 @@
             this.Load += new System.EventHandler(this.gererProduit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -499,9 +502,6 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dotNetDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

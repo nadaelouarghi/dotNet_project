@@ -37,7 +37,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.urlTextBox = new System.Windows.Forms.TextBox();
+            this.status = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,15 +55,9 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.prixTextBox = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.nomTextBox = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dotNetDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label10 = new System.Windows.Forms.Label();
-            this.descriptionTextBox = new System.Windows.Forms.RichTextBox();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -137,7 +131,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label15.Location = new System.Drawing.Point(525, 345);
+            this.label15.Location = new System.Drawing.Point(511, 242);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(279, 29);
             this.label15.TabIndex = 62;
@@ -147,24 +141,26 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(248, 377);
+            this.dataGridView1.Location = new System.Drawing.Point(234, 274);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(857, 196);
+            this.dataGridView1.Size = new System.Drawing.Size(857, 284);
             this.dataGridView1.TabIndex = 61;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // urlTextBox
+            // status
             // 
-            this.urlTextBox.Location = new System.Drawing.Point(622, 167);
-            this.urlTextBox.Name = "urlTextBox";
-            this.urlTextBox.Size = new System.Drawing.Size(100, 37);
-            this.urlTextBox.TabIndex = 60;
+            this.status.Location = new System.Drawing.Point(287, 189);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(100, 37);
+            this.status.TabIndex = 60;
+            this.status.TextChanged += new System.EventHandler(this.status_TextChanged);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(617, 123);
+            this.label14.Location = new System.Drawing.Point(282, 145);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(89, 29);
             this.label14.TabIndex = 59;
@@ -208,7 +204,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(1138, 0);
+            this.label12.Location = new System.Drawing.Point(1139, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(29, 29);
             this.label12.TabIndex = 57;
@@ -330,44 +326,13 @@
             // 
             this.button1.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(986, 314);
+            this.button1.Location = new System.Drawing.Point(790, 184);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 42);
             this.button1.TabIndex = 51;
-            this.button1.Text = "Ajouter";
+            this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // prixTextBox
-            // 
-            this.prixTextBox.Location = new System.Drawing.Point(438, 167);
-            this.prixTextBox.Name = "prixTextBox";
-            this.prixTextBox.Size = new System.Drawing.Size(100, 37);
-            this.prixTextBox.TabIndex = 47;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(433, 123);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 29);
-            this.label8.TabIndex = 46;
-            this.label8.Text = "Totale";
-            // 
-            // nomTextBox
-            // 
-            this.nomTextBox.Location = new System.Drawing.Point(227, 167);
-            this.nomTextBox.Name = "nomTextBox";
-            this.nomTextBox.Size = new System.Drawing.Size(171, 37);
-            this.nomTextBox.TabIndex = 45;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(222, 123);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(124, 29);
-            this.label7.TabIndex = 44;
-            this.label7.Text = "NomUser";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -389,50 +354,28 @@
             this.label1.TabIndex = 42;
             this.label1.Text = "E-Shop";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(747, 119);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 29);
-            this.label10.TabIndex = 50;
-            this.label10.Text = "Detaills";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
-            // 
-            // descriptionTextBox
-            // 
-            this.descriptionTextBox.Location = new System.Drawing.Point(752, 167);
-            this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(230, 65);
-            this.descriptionTextBox.TabIndex = 56;
-            this.descriptionTextBox.Text = "";
-            // 
             // gererCommande
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1168, 589);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.urlTextBox);
+            this.Controls.Add(this.status);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.prixTextBox);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.nomTextBox);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "gererCommande";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "gererCommande";
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -467,7 +410,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox urlTextBox;
+        private System.Windows.Forms.TextBox status;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label4;
@@ -486,13 +429,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox prixTextBox;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox nomTextBox;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RichTextBox descriptionTextBox;
     }
 }

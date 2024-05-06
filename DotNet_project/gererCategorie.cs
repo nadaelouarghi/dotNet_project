@@ -248,5 +248,10 @@ namespace DotNet_project
         {
             (new gererCommande()).Show();
         }
+
+        private void label6_Click_1(object sender, EventArgs e)
+        {
+            (new gererClients()).Show();
+        }
     }
 }

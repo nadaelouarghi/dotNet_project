@@ -37,6 +37,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,12 +55,11 @@
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.label12 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -66,8 +68,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -107,7 +107,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(1120, 9);
+            this.label2.Location = new System.Drawing.Point(1139, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 29);
             this.label2.TabIndex = 23;
@@ -160,6 +160,36 @@
             this.panel1.Size = new System.Drawing.Size(207, 589);
             this.panel1.TabIndex = 20;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(1, 427);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(56, 47);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 20;
+            this.pictureBox6.TabStop = false;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label16);
+            this.panel6.Location = new System.Drawing.Point(63, 427);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(144, 47);
+            this.panel6.TabIndex = 19;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Chocolate;
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(4, 9);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(162, 29);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Commandes";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
@@ -188,6 +218,7 @@
             this.label6.Size = new System.Drawing.Size(93, 29);
             this.label6.TabIndex = 0;
             this.label6.Text = "Clients";
+            this.label6.Click += new System.EventHandler(this.label6_Click_1);
             // 
             // panel4
             // 
@@ -307,36 +338,6 @@
             this.label8.TabIndex = 37;
             this.label8.Text = "Liste Des Categories";
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1, 427);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(56, 47);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 20;
-            this.pictureBox6.TabStop = false;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label16);
-            this.panel6.Location = new System.Drawing.Point(63, 427);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(144, 47);
-            this.panel6.TabIndex = 19;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Chocolate;
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(4, 9);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(162, 29);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Commandes";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
-            // 
             // gererCategorie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
@@ -362,6 +363,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -374,9 +378,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
