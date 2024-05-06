@@ -45,8 +45,12 @@ namespace DotNet_project
                 // If valid user, redirect to home or another form
                 // For example:
                 SessionManager.Username = username;
+<<<<<<< HEAD
+                adminHome homeForm = new adminHome();
+=======
                 SessionManager.UserId = GetUserID(username);
                 Form1 homeForm = new Form1();
+>>>>>>> d7842f7dbb6d940c3ae2def3a7948148db1a6cc4
                 homeForm.Show();
                 this.Hide(); // Hide the login form
             }

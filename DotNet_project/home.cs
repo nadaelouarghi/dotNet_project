@@ -9,8 +9,20 @@ namespace WindowsFormsApp
 {
     public partial class Form1 : Form
     {
+<<<<<<< HEAD
+        string connectionString = "data source=DESKTOP-NAWAL;initial catalog=Dotnet;integrated security=true";
+
+        // Define a class to represent a category
+        public class Category
+        {
+            public int CategoryID { get; set; }
+            public string Name { get; set; }
+        }
+
+=======
         string connectionString = "data source=LAPTOP-ROHL39L4;initial catalog=projetDotnet;integrated security=true";
         
+>>>>>>> d7842f7dbb6d940c3ae2def3a7948148db1a6cc4
         // List to store categories
         List<Category> Categories = new List<Category>();
 
@@ -48,6 +60,10 @@ namespace WindowsFormsApp
         // Method to display images for each category
         private void DisplayImages()
         {
+<<<<<<< HEAD
+            string connectionString = "Data Source=DESKTOP-NAWAL;Initial Catalog=DotNet;Integrated Security=True";
+=======
+>>>>>>> d7842f7dbb6d940c3ae2def3a7948148db1a6cc4
             string query = "SELECT TOP 4 ProductID, ProductName, Price, ImageURL FROM Product WHERE CategoryID = @CategoryID";
             SqlConnection connection = new SqlConnection(connectionString);
 
