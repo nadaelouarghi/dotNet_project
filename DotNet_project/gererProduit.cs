@@ -339,6 +339,7 @@ namespace DotNet_project
         private void label3_Click(object sender, EventArgs e)
         {
             //deconnexion
+            (new login()).Show();
         }
     }
 }

@@ -41,5 +41,30 @@ namespace DotNet_project
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            (new gererProduit()).Show();
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+            (new gererCategorie()).Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            (new gererClients()).Show();
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+            (new gererCommande()).Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            (new login()).Show();
+        }
     }
 }
